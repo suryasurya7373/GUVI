@@ -1,0 +1,27 @@
+package Programs;
+import java.util.*;
+public class No_Zero {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=a+b;
+		String d=Integer.toString(a);
+		String e=Integer.toString(b);
+		String f=Integer.toString(c);
+		String g=d.replace("0", "");
+		String h=e.replace("0", "");
+		String i=f.replace("0", "");
+		int j=Integer.parseInt(g);
+		int k=Integer.parseInt(h);
+		int l=Integer.parseInt(i);
+		int m=j+k;
+		if(m==l){
+			System.out.println(true);
+		}else{
+			System.out.println(false);
+		}
+	}
+	
+}
