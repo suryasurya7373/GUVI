@@ -1,0 +1,21 @@
+package Programs;
+import java.util.*;
+public class Palindrome_1_To_100 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		for(int i=10;i<=n;i++){
+			String s="";
+			String s1=String.valueOf(i);
+			StringBuffer sb=new StringBuffer(s1);
+			s=String.valueOf(sb.reverse());
+			if(i==(Integer.valueOf(s))){
+				System.out.println(i);
+			}
+		}
+
+	}
+
+}
