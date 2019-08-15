@@ -1,0 +1,18 @@
+package Programs;
+import java.util.*;
+public class ProgramS12 {
+
+	public static void main(String[] args){
+		Scanner sc=new Scanner (System.in);
+		String s = sc.nextLine();
+		String f = sc.next();
+		String res ="";
+		if(s.indexOf(f)==s.lastIndexOf(f)){
+		res=String.valueOf(s.charAt(s.indexOf(f)-1))+s.charAt(s.indexOf(f)+f.length());
+		}else{
+		res=String.valueOf(s.charAt(s.indexOf(f)-1))+s.charAt(s.indexOf(f)+f.length())+String.valueOf(s.charAt(s.lastIndexOf(f)-1))+s.charAt(s.lastIndexOf(f)+f.length());
+		}
+		System.out.println(res);
+	}
+
+}
